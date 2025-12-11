@@ -1,0 +1,592 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="utf-8">
+        <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '830015959480151');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=830015959480151&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+<script>
+  window.pixelId = "6935be0f70235d8601e561e2";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Método de pagamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f3f5f4;
+            --card: #fff;
+            --borda: #e8ebea;
+            --verde: #42761d;
+            --sub: #6b776a;
+            --txt: #1f2a1e
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            color: var(--txt)
+        }
+
+        .topoShell {
+            max-width: 880px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 0 0 14px 14px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, .12)
+        }
+
+        .topoBarra {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            border-bottom: 1px solid #e5e7eb
+        }
+
+        .btnVoltar {
+            width: 32px;
+            height: 32px;
+            border-radius: 999px;
+            border: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer
+        }
+
+        .btnVoltar svg {
+            width: 18px;
+            height: 18px;
+            stroke: #111827
+        }
+
+        .topoLogo {
+            height: 34px
+        }
+
+        .topoSpacer {
+            width: 32px;
+            height: 32px
+        }
+
+        .topoBanner {
+            width: 100%;
+            border-radius: 0 0 14px 14px;
+            overflow: hidden
+        }
+
+        .topoBanner img {
+            display: block;
+            width: 100%;
+            height: auto
+        }
+
+        .wrapper {
+            max-width: 880px;
+            margin: 16px auto 28px;
+            padding: 0 16px
+        }
+
+        .breadcrumb {
+            max-width: 720px;
+            margin: 0 auto 10px auto;
+            color: var(--sub);
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .breadcrumb a {
+            color: var(--sub);
+            text-decoration: none
+        }
+
+        .breadcrumb span.sep {
+            opacity: .6
+        }
+
+        .card {
+            max-width: 720px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid var(--borda);
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(16, 24, 40, .06);
+            padding: 18px
+        }
+
+        .tituloSecao {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 14px
+        }
+
+        .topRow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 12px;
+            background: #f8faf7;
+            border: 1px solid var(--borda);
+            border-radius: 10px;
+            margin-bottom: 16px
+        }
+
+        .userBox {
+            display: flex;
+            flex-direction: column
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--sub)
+        }
+
+        .link {
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 13px
+        }
+
+        .method {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid #2563eb;
+            background: #eef3ff;
+            border-radius: 12px;
+            padding: 14px;
+            margin-top: 4px
+        }
+
+        .method .left {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .radio {
+            width: 20px;
+            height: 20px;
+            border-radius: 999px;
+            border: 2px solid #2563eb;
+            background: radial-gradient(circle at center, #2563eb 55%, #fff 55%);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, .15)
+        }
+
+        .summary {
+            margin-top: 18px;
+            border-top: 1px solid var(--borda);
+            padding-top: 12px
+        }
+
+        .total {
+            font-weight: 800;
+            font-size: 18px;
+            color: #111
+        }
+
+        .cotas {
+            font-size: 15px;
+            color: #111;
+            margin-top: 6px
+        }
+
+        .btn {
+            width: 100%;
+            height: 48px;
+            border-radius: 10px;
+            border: 0;
+            background: var(--verde);
+            color: #fff;
+            font-weight: 800;
+            cursor: pointer;
+            margin-top: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px
+        }
+
+        .btn:disabled {
+            opacity: .7;
+            cursor: not-allowed
+        }
+
+        .spin {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #fff;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: g 1s linear infinite;
+            display: none
+        }
+
+        .btn.loading .spin {
+            display: inline-block
+        }
+
+        @keyframes g {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .cookies {
+            max-width: 560px;
+            margin: 14px auto 0 auto;
+            text-align: center;
+            color: var(--sub);
+            font-size: 12px
+        }
+
+        .rodapeLogo {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px
+        }
+
+        .rodapeLogo img {
+            height: 75px;
+            opacity: .9
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(255, 255, 255, .6);
+            backdrop-filter: blur(1px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999
+        }
+
+        .overlay.show {
+            display: flex
+        }
+
+        .loader {
+            width: 46px;
+            height: 46px;
+            border: 4px solid #cfe0ca;
+            border-top-color: var(--verde);
+            border-radius: 50%;
+            animation: g 1s linear infinite
+        }
+
+        .upsellBox {
+            margin-top: 18px;
+            border: 1px solid #e4e7ec;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff
+        }
+
+        .upsellTitle {
+            background: #f7931a;
+            color: #fff;
+            font-weight: 600;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px
+        }
+
+        .upsellContent {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px;
+            cursor: pointer
+        }
+
+        .upsellText {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1f2a1e
+        }
+
+        .upsellCheckbox {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #d0d5dd;
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+            position: relative
+        }
+
+        .upsellCheckbox:checked {
+            background: #f7931a;
+            border-color: #f7931a
+        }
+
+        .upsellCheckbox:checked::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.0' stroke='black'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m4.5 12.75 6 6 9-11.75'/%3E%3C/svg%3E")
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topoShell">
+        <div class="topoBarra">
+            <button class="btnVoltar" type="button" onclick="history.back()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path d="M15.75 19.5 8.25 12l7.5-7.5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <img src="images/logo.png" alt="Prêmios do Carlinhos" class="topoLogo">
+            <div class="topoSpacer"></div>
+        </div>
+        <div class="topoBanner">
+            <img src="images/banner.png" alt="Banner do sorteio">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="breadcrumb">
+            <a href="#">Escolher Produto</a>
+            <span class="sep">›</span>
+            <a href="index.html">Dados pessoais</a>
+            <span class="sep">›</span>
+            <strong>Método de pagamento</strong>
+        </div>
+
+        <div class="card">
+            <div class="tituloSecao">Método de pagamento</div>
+
+            <div class="topRow">
+                <div class="userBox">
+                    <div id="nomeBox" style="font-weight:700">Nome</div>
+                    <div id="cpfBox" class="small">CPF</div>
+                </div>
+                <a id="trocar" href="#" class="link">Não é você?</a>
+            </div>
+
+            <div class="method">
+                <div class="left">
+                    <span class="radio"></span>
+                    <div>
+                        <div style="font-weight:700">Pix</div>
+                        <div class="small">Aprovação imediata</div>
+                    </div>
+                </div>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 12h18M12 3v18" stroke="#2563eb" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </div>
+
+            <div class="upsellBox">
+                <div class="upsellTitle">Aumente suas chances 😁</div>
+                <label class="upsellContent">
+                    <input type="checkbox" id="upsellCheck" class="upsellCheckbox">
+                    <span class="upsellText">Leve + 20 Bilhetes por R$ 9,98</span>
+                </label>
+            </div>
+
+            <div class="summary">
+                <div class="total">Total: <span id="valorTotal"></span></div>
+                <div class="cotas">Cotas: <span id="qtdCotas"></span></div>
+            </div>
+
+            <button id="confirmar" class="btn">
+                <span class="spin"></span>
+                <span class="t">Confirmar compra</span>
+            </button>
+        </div>
+
+        <div class="cookies">
+            Usamos cookies para melhorar a sua navegação. Ao usar nosso site você concorda com o uso de cookies
+            descrito na nossa
+            <a href="#" style="color:var(--verde);text-decoration:none">Política de Privacidade</a>
+        </div>
+        <div class="rodapeLogo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="loader"></div>
+    </div>
+    <script>
+        function maskCpfDisplay(c) {
+            const d = String(c).replace(/\D/g, '');
+            if (d.length < 5) return c;
+            return d.slice(0, 3) + '.***.***-' + d.slice(-2)
+        }
+
+        function paramsToObj() {
+            const p = new URLSearchParams(window.location.search);
+            const o = {};
+            p.forEach((v, k) => o[k] = v);
+            return o
+        }
+
+        function brl(v) {
+            return 'R$ ' + Number(v).toFixed(2).replace('.', ',')
+        }
+
+        const raw = localStorage.getItem('cliente');
+        if (!raw) {
+            window.location.href = 'index.html'
+        }
+
+        let cliente = JSON.parse(raw || '{}');
+
+        const valorLS = localStorage.getItem('valor');
+        const cotasLS = localStorage.getItem('cotas');
+
+        if (valorLS) {
+            const vReais = Number(valorLS) / 100;
+            cliente.valor = vReais
+        }
+
+        if (cotasLS) {
+            cliente.cotas = Number(cotasLS)
+        }
+
+        localStorage.setItem('cliente', JSON.stringify(cliente));
+
+        document.getElementById('nomeBox').textContent = cliente.nome || '';
+        document.getElementById('cpfBox').textContent = 'CPF: ' + maskCpfDisplay(cliente.cpf || '');
+
+        const valorTotalEl = document.getElementById('valorTotal');
+        const qtdCotasEl = document.getElementById('qtdCotas');
+        const upsellCheck = document.getElementById('upsellCheck');
+
+        const UPS_VALOR = 9.98;
+        const UPS_COTAS = 20;
+
+        let valorBase = Number(cliente.valor || 0);
+        let cotasBase = 0;
+
+        async function carregarCotas() {
+            let valorCota = 10;
+            try {
+                const r = await fetch('/cotas.json', { cache: 'no-store' });
+                const j = await r.json();
+                if (j && j.valor_cota_centavos) valorCota = parseInt(j.valor_cota_centavos, 10)
+            } catch (e) { }
+            const centavos = Math.round(Number(valorBase || 0) * 100);
+            const qtd = Math.floor(centavos / valorCota);
+            cotasBase = qtd;
+            atualizarResumo()
+        }
+
+        function atualizarResumo() {
+            const upsAtivo = upsellCheck.checked;
+            const total = valorBase + (upsAtivo ? UPS_VALOR : 0);
+            const cotasTotal = cotasBase + (upsAtivo ? UPS_COTAS : 0);
+            valorTotalEl.textContent = brl(total);
+            qtdCotasEl.textContent = String(cotasTotal);
+            cliente.valor = total;
+            cliente.cotas = cotasTotal;
+            localStorage.setItem('cliente', JSON.stringify(cliente))
+        }
+
+        carregarCotas();
+
+        upsellCheck.addEventListener('change', atualizarResumo);
+
+        document.getElementById('trocar').addEventListener('click', e => {
+            e.preventDefault();
+            localStorage.removeItem('cliente');
+            window.location.href = 'index.html'
+        });
+
+        const btn = document.getElementById('confirmar');
+        const overlay = document.getElementById('overlay');
+        let travado = false;
+
+        btn.addEventListener('click', async () => {
+            if (travado) return;
+            travado = true;
+            btn.disabled = true;
+            btn.classList.add('loading');
+            btn.querySelector('.t').textContent = 'Gerando pagamento...';
+            overlay.classList.add('show');
+            try {
+                const tracking = paramsToObj();
+                const valorCentavos = Math.round(Number(cliente.valor || 0) * 100);
+
+                const payload = {
+                    valor: valorCentavos,
+                    tracking,
+                    cliente: {
+                        nome: cliente.nome || '',
+                        email: cliente.email || '',
+                        celular: cliente.celular || '',
+                        cpf: cliente.cpf || '',
+                        cotas: cliente.cotas || 0
+                    }
+                };
+
+                const res = await fetch('../pg4/index.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                let j = null;
+                try { j = await res.json() } catch (e) { }
+
+                if (j && j.pix && j.pix.qrcode) {
+                    localStorage.setItem('pix', JSON.stringify(j));
+                    const qs = window.location.search;
+                    window.location.href = '../pg4/payment.html' + (qs ? qs : '')
+                } else {
+                    alert('Não foi possível gerar o PIX.')
+                }
+            } catch (e) {
+            alert('Erro ao gerar pagamento.')
+            } finally {
+                overlay.classList.remove('show');
+                btn.classList.remove('loading');
+                btn.querySelector('.t').textContent = 'Confirmar compra';
+                btn.disabled = false;
+                travado = false
+            }
+        });
+    </script>
+
+
+
+
+</body></html>

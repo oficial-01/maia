@@ -1,0 +1,369 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="utf-8">
+      <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '830015959480151');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=830015959480151&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+<script>
+  window.pixelId = "6935be0f70235d8601e561e2";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pagamento PIX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3f5f4;
+      --card: #fff;
+      --borda: #e8ebea;
+      --verde: #42761d;
+      --txt: #1f2a1e;
+      --sub: #6b776a
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--txt)
+    }
+
+    .wrapper {
+      max-width: 560px;
+      margin: 28px auto;
+      padding: 0 16px
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--borda);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(16, 24, 40, .06);
+      padding: 18px
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px
+    }
+
+    .logo {
+      height: 85px
+    }
+
+    .titulo {
+      font-weight: 800;
+      text-align: center;
+      margin: 6px 0 2px
+    }
+
+    .sub {
+      font-size: 13px;
+      color: var(--sub);
+      text-align: center;
+      margin-bottom: 12px
+    }
+
+    .qrWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px
+    }
+
+    .qr {
+      width: 260px;
+      height: 260px;
+      border-radius: 12px;
+      border: 1px solid #ecf0ec;
+      object-fit: contain;
+      background: #fff
+    }
+
+    .valor {
+      font-weight: 800;
+      font-size: 18px;
+      color: #111;
+      text-align: center;
+      margin-top: 4px
+    }
+
+    .pixBox {
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      background: #f7faf6;
+      border: 1px dashed #d7e4d3;
+      border-radius: 10px;
+      padding: 10px;
+      word-break: break-all;
+      width: 100%
+    }
+
+    .btns {
+      display: flex;
+      gap: 8px;
+      width: 100%
+    }
+
+    .btn {
+      flex: 1;
+      height: 46px;
+      border-radius: 10px;
+      border: 0;
+      font-weight: 800;
+      cursor: pointer
+    }
+
+    .btn.copy {
+      background: #fff;
+      border: 2px solid var(--verde);
+      color: var(--verde)
+    }
+
+    .btn.ok {
+      background: var(--verde);
+      color: #fff
+    }
+
+    .info {
+      font-size: 13px;
+      color: var(--sub);
+      text-align: center;
+      margin-top: 8px;
+      line-height: 1.5
+    }
+
+    .rodape {
+      display: flex;
+      justify-content: center;
+      margin-top: 14px
+    }
+
+    .rodape img {
+      height: 70px;
+      opacity: .85
+    }
+
+    .ref {
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      margin-top: 8px
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #555;
+      text-align: center
+    }
+
+    .headerTopo {
+      background: #fff;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .headerWrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .headerLogo {
+      height: 35px;
+    }
+
+    .btnMinhas {
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: 2px solid #1d4ed8;
+      background: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #1d4ed8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="headerTopo">
+      <div class="headerWrap">
+        <img src="images/logo.png" class="headerLogo">
+
+        <button id="btnMinhas" class="btnMinhas">
+          Minhas compras
+        </button>
+      </div>
+    </header>
+
+
+    <div class="card">
+
+      <div class="titulo">Pagamento via Pix</div>
+      <div id="nomeLinha" class="sub"></div>
+      <div class="qrWrap">
+        <img id="qrImg" class="qr" alt="QR Code Pix">
+        <div id="valorLinha" class="valor"></div>
+        <div id="pixCode" class="pixBox"></div>
+        <div class="btns">
+          <button id="copiar" class="btn copy">Copiar código</button>
+          <button id="paguei" class="btn ok">Já paguei</button>
+        </div>
+        <div class="info">Abra o app do seu banco, escolha <b>Pix</b>, selecione <b>Pix Copia e Cola</b> e cole o código
+          acima ou escaneie o QR Code.</div>
+        <div id="refLinha" class="ref"></div>
+        <div id="statusLinha" class="status"></div>
+      </div>
+    </div>
+    <div class="rodape"><img src="images/logo.png" alt="Logo"></div>
+  </div>
+
+  <script>
+    function brl(v) { return 'R$ ' + Number(v).toFixed(2).replace('.', ',') }
+    function maskCpf(c) { const d = String(c).replace(/\D/g, ''); if (d.length < 5) return c; return d.slice(0, 3) + '.***.***-' + d.slice(-2) }
+    function paramsToObj() { const p = new URLSearchParams(window.location.search); const o = {}; p.forEach((v, k) => o[k] = v); return o }
+
+    const clienteRaw = localStorage.getItem('cliente')
+    if (!clienteRaw) { window.location.href = '../' }
+    const cliente = JSON.parse(clienteRaw)
+    
+    let pix = null
+    const pixRaw = localStorage.getItem('pix')
+    if (pixRaw) { pix = JSON.parse(pixRaw) }
+
+    const nomeCurto = cliente && cliente.nome ? cliente.nome.split(' ').slice(0, 2).join(' ') : ''
+    document.getElementById('nomeLinha').textContent = nomeCurto ? nomeCurto + ' • CPF ' + maskCpf(cliente.cpf) : ''
+    document.getElementById('valorLinha').textContent = brl(cliente.valor || 0)
+
+    // Função para gerar o PIX via API
+    async function gerarPix() {
+      try {
+        const payload = {
+          valor: Math.round(Number(cliente.valor) * 100),
+          cliente: {
+            nome: cliente.nome || '',
+            email: cliente.email || '',
+            cpf: cliente.cpf || '',
+            celular: cliente.celular || '11999999999',
+            rua: cliente.rua || 'Rua Teste',
+            numero: cliente.numero || '123',
+            cep: cliente.cep || '01001000',
+            bairro: cliente.bairro || 'Centro',
+            cidade: cliente.cidade || 'São Paulo',
+            estado: cliente.estado || 'SP'
+          }
+        }
+        
+        const response = await fetch('api.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+        
+        const data = await response.json()
+        
+        if (data.success && data.transaction) {
+          pix = data.transaction
+          localStorage.setItem('pix', JSON.stringify(pix))
+          
+          const qrcode = pix.pix && pix.pix.qrcode ? pix.pix.qrcode : ''
+          document.getElementById('pixCode').textContent = qrcode || ''
+          document.getElementById('qrImg').src = 'https://quickchart.io/qr?text=' + encodeURIComponent(qrcode)
+          if (pix.id) { document.getElementById('refLinha').textContent = 'Referência: ' + pix.id }
+        } else {
+          console.error('Erro ao gerar PIX:', data.error)
+          alert('Erro ao gerar PIX: ' + (data.error || 'Erro desconhecido'))
+        }
+      } catch (e) {
+        console.error('Erro na requisição:', e)
+        alert('Erro ao conectar com a API de PIX')
+      }
+    }
+    
+    // Gerar PIX ao carregar a página
+    gerarPix()
+    
+    const qrcode = pix && pix.pix && pix.pix.qrcode ? pix.pix.qrcode : ''
+    if (qrcode) {
+      document.getElementById('pixCode').textContent = qrcode
+      document.getElementById('qrImg').src = 'https://quickchart.io/qr?text=' + encodeURIComponent(qrcode)
+    }
+    if (pix && pix.id) { document.getElementById('refLinha').textContent = 'Referência: ' + pix.id }
+
+    document.getElementById('copiar').addEventListener('click', async () => { await navigator.clipboard.writeText(qrcode); alert('Código Pix copiado!') })
+
+    const statusEl = document.getElementById('statusLinha')
+    const tracking = paramsToObj()
+    const pixId = pix && pix.id ? pix.id : null
+    let enviouUtm = false
+
+    async function checarStatus() {
+      if (!pixId) return
+      try {
+        const r = await fetch('api/status.php?id=' + encodeURIComponent(pixId))
+        const s = await r.json()
+        if (s && s.status) { statusEl.textContent = 'Status: ' + s.status }
+        if (s && (/^(paid|approved|success)$/i).test(String(s.status))) {
+          if (!enviouUtm) {
+            enviouUtm = true
+            await enviarUtmify()
+            window.location.href = 'sucesso.html'
+          }
+        }
+      } catch (e) { }
+    }
+
+    async function enviarUtmify() {
+      const valorCentavos = Math.round(Number(cliente.valor) * 100)
+      const payload = {
+        nome: cliente.nome || '',
+        email: cliente.email || '',
+        telefone: cliente.celular || '',
+        cpf: cliente.cpf || '',
+        orderId: pixId || '',
+        pixId: pixId || '',
+        valor: valorCentavos,
+        tracking: tracking
+      }
+      try { await fetch('api/utmify.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }) } catch (e) { }
+    }
+
+    document.getElementById('paguei').addEventListener('click', checarStatus)
+    setInterval(checarStatus, 4000)
+  </script>
+
+
+</body></html>
