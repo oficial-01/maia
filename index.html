@@ -1,0 +1,1342 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="utf-8">
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '830015959480151');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=830015959480151&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+<script>
+  window.pixelId = "6935be0f70235d8601e561e2";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Prêmios do Carlinhos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+            background: #f3f4f6;
+            color: #0f172a
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            position: sticky;
+            top: 0;
+            z-index: 20
+        }
+
+        header img {
+            height: 35px
+        }
+
+        .btnTopo {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border-radius: 10px;
+            border: 2px solid #1d4ed8;
+            padding: 20px 18px;
+            background: #ffffff;
+            color: #111827;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer
+        }
+
+        .btnTopo:hover {
+            background: #eff6ff
+        }
+
+        .btnTopo svg {
+            stroke: #1d4ed8
+        }
+
+        .btnTopo2 {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border-radius: 999px;
+            border: 2px solid #1d4ed8;
+            padding: 12px 18px;
+            background: #ffffff;
+            color: #111827;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer
+        }
+
+        .btnTopo2:hover {
+            background: #eff6ff
+        }
+
+        .btnTopo2 svg {
+            stroke: #1d4ed8
+        }
+
+        .wrap {
+            max-width: 960px;
+            margin: 16px auto 32px;
+            padding: 0 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            overflow: hidden
+        }
+
+        .banner {
+            width: 100%;
+            display: block
+        }
+
+        .faixa {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 16px;
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 13px
+        }
+
+        .faixaData {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 10px;
+            color: #059669;
+            font-weight: 600
+        }
+
+        .faixaData span:nth-child(2) {
+            color: #111827;
+            font-weight: 500
+        }
+
+        .faixaPreco {
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .faixaPreco small {
+            color: #4b5563;
+            font-weight: 500
+        }
+
+        .tagUnit {
+            padding: 6px 14px;
+            border-radius: 8px;
+            background: #111827;
+            color: #f9fafb;
+            font-weight: 800;
+            font-size: 13px
+        }
+
+        .secaoPrincipal {
+            padding: 16px
+        }
+
+        .tituloCombos {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px
+        }
+
+        .tituloCombos svg {
+            width: 18px;
+            height: 18px;
+            color: #4b5563
+        }
+
+        .tituloCombos h2 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #111827
+        }
+
+        .combosGrid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 16px
+        }
+
+        .comboBtn {
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            background: #ffffff;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            transition: border-color .15s, box-shadow .15s, background .15s
+        }
+
+        .comboTitulo {
+            display: block;
+        }
+
+        .comboPrecoLinha {
+            display: block;
+        }
+
+        .comboPrecoValor {
+            display: inline;
+        }
+
+
+        .comboMaisVendido {
+            position: absolute;
+            top: -13px;
+            left: 12px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #1d4ed8;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700
+        }
+
+        .comboTitulo {
+            font-size: 15px;
+            font-weight: 800;
+            color: #374151
+        }
+
+        .comboPrecoLinha {
+            font-size: 13px;
+            color: #4b5563;
+            font-weight: 600
+        }
+
+        .comboPrecoValor {
+            font-weight: 800;
+            color: #374151
+        }
+
+        .comboBtn.on {
+            border-color: #2563eb;
+            background: #e0edff;
+            box-shadow: 0 0 0 1px #bfdbfe
+        }
+
+        @media (max-width:480px) {
+            .combosGrid {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+        }
+
+        .blocoQtd {
+            margin-top: 8px
+        }
+
+        .lblQtd {
+            font-size: 14px;
+            font-weight: 700;
+            color: #374151;
+            margin-bottom: 8px
+        }
+
+        .stepper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%
+        }
+
+        .btSq {
+            width: 64px;
+            height: 56px;
+            border-radius: 10px;
+            border: 2px solid #1d4ed8;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1d4ed8;
+            cursor: pointer
+        }
+
+        .btSq:active {
+            transform: scale(0.97)
+        }
+
+        input[type=number] {
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            appearance: textfield
+        }
+
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0
+        }
+
+        .inpQtd {
+            flex: 1 1 auto;
+            min-width: 0;
+            height: 56px;
+            border-radius: 10px;
+            border: 2px solid #e5e7eb;
+            background: #ffffff;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 800;
+            color: #111827
+        }
+
+        @media (max-width:360px) {
+            .btSq {
+                width: 95px;
+                height: 55px;
+                font-size: 22px
+            }
+
+            .inpQtd {
+                height: 52px;
+                font-size: 24px
+            }
+        }
+
+        .rodapeCard {
+            border-top: 1px solid #e5e7eb;
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            background: #ffffff
+        }
+
+        .resBox {
+            display: flex;
+            flex-direction: column;
+            gap: 4px
+        }
+
+        .resTxt {
+            font-size: 13px;
+            color: #4b5563;
+            font-weight: 600
+        }
+
+        .precos {
+            display: flex;
+            flex-direction: column;
+            gap: 2px
+        }
+
+        .precoOld {
+            color: #dc2626;
+            text-decoration: line-through;
+            font-size: 12px;
+            display: none
+        }
+
+        .precoNew {
+            color: #111827;
+            font-size: 20px;
+            font-weight: 800
+        }
+
+        @media (max-width:420px) {
+            .precoNew {
+                font-size: 18px
+            }
+        }
+
+        .btnComprar {
+            border-radius: 10px;
+            border: none;
+            padding: 12px 32px;
+            background: #1d4ed8;
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 16px;
+            cursor: pointer;
+            white-space: nowrap
+        }
+
+        .btnComprar:disabled {
+            background: #9ca3af;
+            cursor: not-allowed
+        }
+
+        .raspaSec {
+            margin-top: 4px;
+            padding: 16px;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb
+        }
+
+        .raspaHead {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px
+        }
+
+        .raspaHead svg {
+            width: 26px;
+            height: 26px;
+            color: #1d4ed8
+        }
+
+        .raspaTitle {
+            font-size: 18px;
+            font-weight: 800;
+            color: #111827
+        }
+
+        .raspaList {
+            display: flex;
+            flex-direction: column;
+            gap: 16px
+        }
+
+        .raspaCard {
+            position: relative;
+            border-radius: 12px;
+            border: 1px solid #d1d5db;
+            padding: 16px;
+            background: #f9fafb;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            cursor: pointer
+        }
+
+        .raspaBadge {
+            position: absolute;
+            left: 16px;
+            top: -12px;
+            border-radius: 999px;
+            background: #111827;
+            color: #f9fafb;
+            padding: 6px 14px;
+            font-size: 11px;
+            font-weight: 700
+        }
+
+        .raspaBody {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .raspaTxt .top {
+            display: flex;
+            gap: 4px;
+            align-items: center
+        }
+
+        .raspaTxt .top small {
+            font-size: 11px;
+            color: #6b7280
+        }
+
+        .raspaTxt .top b {
+            font-size: 15px;
+            color: #111827
+        }
+
+        .raspaTxt .sub {
+            font-size: 11px;
+            color: #6b7280;
+            margin-top: 2px
+        }
+
+        .raspaBtn {
+            width: 72px;
+            height: 52px;
+            border-radius: 10px;
+            border: 1px solid #d1d5db;
+            background: #ffffff;
+            font-size: 20px;
+            font-weight: 800;
+            cursor: pointer
+        }
+
+        .raspaCard:hover {
+            background: #ffffff
+        }
+
+        .raspaBtn:active {
+            transform: scale(0.97)
+        }
+
+        .toast {
+            position: fixed;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            background: #111827;
+            color: #ffffff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 14px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .2s, transform .2s;
+            z-index: 9999
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-4px)
+        }
+
+        .acco {
+            margin-top: 4px
+        }
+
+        .accHead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+            cursor: pointer
+        }
+
+        .accTit {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 800;
+            color: #111827;
+            font-size: 14px
+        }
+
+        .accTit img {
+            width: 22px;
+            height: 22px
+        }
+
+        .chev {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #111827
+        }
+
+        .accBody {
+            display: none;
+            border-radius: 0 0 12px 12px;
+            border: 1px solid #e5e7eb;
+            border-top: none;
+            background: #ffffff
+        }
+
+        .subBar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 16px;
+            font-size: 11px;
+            color: #6b7280;
+            font-weight: 700
+        }
+
+        .contagem {
+            color: #94a3b8
+        }
+
+        .tabs {
+            display: flex;
+            gap: 8px;
+            padding: 0 16px 10px;
+            border-bottom: 1px solid #e5e7eb
+        }
+
+        .tab {
+            height: 34px;
+            padding: 0 14px;
+            border-radius: 999px;
+            border: 1px solid #d1d5db;
+            font-size: 12px;
+            font-weight: 700;
+            background: #ffffff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .tab.on {
+            background: #f3f4ff;
+            border-color: #4f46e5;
+            color: #111827
+        }
+
+        .lista {
+            padding: 0 16px 10px;
+            display: flex;
+            flex-direction: column
+        }
+
+        .item {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb
+        }
+
+        .itTop {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px
+        }
+
+        .precoItem {
+            font-weight: 800;
+            color: #111827
+        }
+
+        .badgeOk {
+            background: #1d4ed8;
+            color: #ffffff;
+            border-radius: 999px;
+            padding: 3px 10px;
+            font-size: 11px;
+            font-weight: 700
+        }
+
+        .badgeOff2 {
+            background: #9ca3af;
+            color: #ffffff;
+            border-radius: 999px;
+            padding: 3px 10px;
+            font-size: 11px;
+            font-weight: 700
+        }
+
+        .numRow {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #6b7280;
+            font-weight: 700;
+            font-size: 13px
+        }
+
+        .ctrlLista {
+            border-top: 1px solid #e5e7eb;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #2563eb;
+            cursor: pointer
+        }
+
+        .ctrlLista svg {
+            width: 18px;
+            height: 18px
+        }
+
+        .clienteSec {
+            margin-top: 4px;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #4b5563;
+            display: flex;
+            flex-direction: column;
+            gap: 14px
+        }
+
+        .clienteTitulo {
+            font-size: 18px;
+            font-weight: 800;
+            color: #111827
+        }
+
+        .clienteBusca {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid #d1d5db;
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827
+        }
+
+        .clienteBusca svg {
+            width: 18px;
+            height: 18px;
+            color: #1d4ed8
+        }
+
+        .clienteLogos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap
+        }
+
+        .clienteLogos img {
+            height: 40px;
+            object-fit: contain
+        }
+
+        .clienteLinks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px
+        }
+
+        .clienteLinks a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .clienteVersao {
+            font-size: 11px;
+            color: #9ca3af
+        }
+
+        .clienteContainer {
+            text-align: center;
+            width: 100%;
+        }
+
+        .clienteLinks {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .clienteVersao {
+            margin-top: 10px;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        .rodapeCardPc {
+            border-top: 1px solid #e5e7eb;
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            background: #ffffff
+        }
+
+        .rodapeCardMob {
+            display: none
+        }
+
+        .mobLinha {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            width: 100%
+        }
+
+        .mobRes {
+            display: flex;
+            flex-direction: column;
+            gap: 2px
+        }
+
+        .mobTxt {
+            font-size: 12px;
+            color: #111827;
+            font-weight: 700
+        }
+
+        .mobValor {
+            font-size: 16px;
+            font-weight: 800;
+            color: #111827
+        }
+
+        .mobStepper {
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .mobBt {
+            width: 55px;
+            height: 45px;
+            border-radius: 8px;
+            border: 2px solid #1d4ed8;
+            background: #fff;
+            font-size: 18px;
+            font-weight: 800;
+            color: #1d4ed8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer
+        }
+
+        .mobInp {
+            width: 75px;
+            height: 45px;
+            border-radius: 8px;
+            border: 2px solid #e5e7eb;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 800;
+            color: #111827
+        }
+
+        .btnComprarMob {
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            padding: 12px 16px;
+            background: #1d4ed8;
+            color: #fff;
+            font-weight: 800;
+            font-size: 16px;
+            cursor: pointer
+        }
+
+        @media (max-width: 640px) {
+            .rodapeCardPc {
+                display: none
+            }
+
+            .rodapeCardMob {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 12px 14px;
+                border-top: 1px solid #d1d5db;
+                background: #ffffff;
+                z-index: 999;
+                display: flex;
+                flex-direction: column;
+                gap: 8px
+            }
+
+            .blocoQtd {
+                display: none
+            }
+
+            .wrap {
+                padding-bottom: 140px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <button id="btnMinhas" class="btnTopo2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 20 20">
+                <path d="M8.75 15.833c3.912 0 7.083-3.171 7.083-7.083 0-3.912-3.171-7.083-7.083-7.083C4.838 1.667 1.667 4.838 1.667 8.75c0 3.912 3.171 7.083 7.083 7.083Z" stroke-width="1.667"></path>
+                <path d="m13.842 13.842 3.536 3.536" stroke-width="1.667"></path>
+            </svg>
+            Minhas compras
+        </button>
+    </header>
+
+    <div class="wrap">
+        <div class="card">
+            <img src="images/banner.png" class="banner" alt="Banner">
+            <div class="faixa">
+                <div class="faixaData">
+                    <span>🍀 Sorteio:</span>
+                    <span>26/12/2025 21:00</span>
+                </div>
+                <div class="faixaPreco">
+                    <small>Por apenas</small>
+                    <span class="tagUnit" id="tagUnit">R$ 0,50</span>
+                </div>
+            </div>
+
+            <div class="secaoPrincipal">
+                <div class="tituloCombos">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 6.75A2.25 2.25 0 0 1 5.25 4.5h13.5A2.25 2.25 0 0 1 21 6.75v2.25H3z"></path>
+                        <path d="M3 11.25h18v6A2.25 2.25 0 0 1 18.75 19.5H5.25A2.25 2.25 0 0 1 3 17.25z"></path>
+                    </svg>
+                    <h2>Combos de números</h2>
+                </div>
+
+                <div class="combosGrid">
+                    <button class="comboBtn on" data-combo-qtd="3">
+                        <span class="comboTitulo">3 Números</span>
+                        <span class="comboPrecoLinha">Por: <span class="comboPrecoValor" data-combo-preco="3">R$
+                                0,00</span></span>
+                    </button>
+                    <button class="comboBtn" data-combo-qtd="5">
+                        <span class="comboMaisVendido">Mais vendido</span>
+                        <span class="comboTitulo">5 Números</span>
+                        <span class="comboPrecoLinha">Por: <span class="comboPrecoValor" data-combo-preco="5">R$
+                                0,00</span></span>
+                    </button>
+                    <button class="comboBtn" data-combo-qtd="10">
+                        <span class="comboTitulo">10 Números</span>
+                        <span class="comboPrecoLinha">Por: <span class="comboPrecoValor" data-combo-preco="10">R$
+                                0,00</span></span>
+                    </button>
+                    <button class="comboBtn" data-combo-qtd="15">
+                        <span class="comboTitulo">15 Números</span>
+                        <span class="comboPrecoLinha">Por: <span class="comboPrecoValor" data-combo-preco="15">R$
+                                0,00</span></span>
+                    </button>
+                </div>
+
+                <div class="blocoQtd">
+                    <div class="lblQtd">Escolha a quantidade</div>
+                    <div class="stepper">
+                        <button class="btSq" id="menos">−</button>
+                        <input id="inpQtd" class="inpQtd" type="number" inputmode="numeric" value="3" min="1">
+                        <button class="btSq" id="mais">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rodapeCardPc">
+                <div class="resBox">
+                    <div class="resTxt" id="txtCotas">3 Números</div>
+                    <div class="precos">
+                        <div class="precoOld" id="txtValorOld">R$ 0,00</div>
+                        <div class="precoNew" id="txtValor">R$ 0,00</div>
+                    </div>
+                </div>
+                <button id="btnComprar" class="btnComprar">Comprar</button>
+            </div>
+
+            <div class="rodapeCardMob">
+                <div class="mobLinha">
+                    <div class="mobRes">
+                        <div class="mobTxt" id="txtCotasMob">3 Números</div>
+                        <div class="mobValor" id="txtValorMob">R$ 0,00</div>
+                    </div>
+
+                    <div class="mobStepper">
+                        <button class="mobBt" id="menosMob">−</button>
+                        <input id="inpQtdMob" class="mobInp" type="number" inputmode="numeric" value="3" min="1">
+                        <button class="mobBt" id="maisMob">+</button>
+                    </div>
+                </div>
+
+                <button id="btnComprarMob" class="btnComprarMob">Comprar</button>
+            </div>
+
+        </div>
+
+
+
+        <div class="clienteSec">
+            <div class="clienteTitulo">Área do cliente</div>
+            <button id="btnMinhas2" class="btnTopo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 20 20">
+                    <path d="M8.75 15.833c3.912 0 7.083-3.171 7.083-7.083 0-3.912-3.171-7.083-7.083-7.083C4.838 1.667 1.667 4.838 1.667 8.75c0 3.912 3.171 7.083 7.083 7.083Z" stroke-width="1.667"></path>
+                    <path d="m13.842 13.842 3.536 3.536" stroke-width="1.667"></path>
+                </svg>
+                Minhas compras
+            </button>
+
+            <div class="clienteLogos">
+                <img src="images/logo.png" alt="Fiote de Sorte">
+            </div>
+
+            <div class="clienteContainer">
+                <div>
+                    Título de participação em promoções de sorteios virtuais. Antes de contratar, consulte atentamente
+                    as
+                    condições da campanha, regulamento completo e prazos de sorteio.
+                </div>
+
+                <div class="clienteLinks">
+                    <a href="#">Condições gerais</a>
+                    <a href="#">Regulamento</a>
+                </div>
+
+                <div class="clienteVersao">v0.2.34-28t</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function brl(v) { return 'R$ ' + Number(v).toFixed(2).replace('.', ',') }
+
+        function temCompras() {
+            for (let i = 0; i < localStorage.length; i++) {
+                const k = localStorage.key(i)
+                if (k && k.startsWith('cotas_numeros_')) return true
+            }
+            return false
+        }
+
+        function abrirMinhasCompras() {
+            if (temCompras()) {
+                location.href = 'sucesso.html'
+            } else {
+                alert('Você ainda não possui números comprados')
+            }
+        }
+
+        document.getElementById('btnMinhas').addEventListener('click', abrirMinhasCompras)
+        const btnMinhas2 = document.getElementById('btnMinhas2')
+        if (btnMinhas2) btnMinhas2.addEventListener('click', abrirMinhasCompras)
+
+        let valorCotaCent = 50
+        let MIN_QTD = 3
+
+        const inp = document.getElementById('inpQtd')
+        const menos = document.getElementById('menos')
+        const mais = document.getElementById('mais')
+
+        const inpMob = document.getElementById('inpQtdMob')
+        const menosMob = document.getElementById('menosMob')
+        const maisMob = document.getElementById('maisMob')
+        const txtCotasMob = document.getElementById('txtCotasMob')
+        const txtValorMob = document.getElementById('txtValorMob')
+        const btnComprarMob = document.getElementById('btnComprarMob')
+
+        const txtCotas = document.getElementById('txtCotas')
+        const txtValor = document.getElementById('txtValor')
+        const btnComprar = document.getElementById('btnComprar')
+        const txtValorOldEl = document.getElementById('txtValorOld')
+        const comboButtons = document.querySelectorAll('.comboBtn')
+        const comboPrecos = document.querySelectorAll('[data-combo-preco]')
+
+        localStorage.setItem('raspadinhas', '0')
+
+        function totalCentavos(q) { return q * valorCotaCent }
+
+        function atualizarCombos() {
+            comboPrecos.forEach(span => {
+                const qtd = parseInt(span.getAttribute('data-combo-preco'), 10)
+                const cent = qtd * valorCotaCent
+                span.textContent = brl(cent / 100)
+            })
+        }
+
+        function sincronizarComboSelecionado(q) {
+            comboButtons.forEach(btn => {
+                const qtdCombo = parseInt(btn.getAttribute('data-combo-qtd'), 10)
+                if (qtdCombo === q) { btn.classList.add('on') } else { btn.classList.remove('on') }
+            })
+        }
+
+        function atualizarResumo() {
+            let q = parseInt(inp.value || '0', 10)
+            if (isNaN(q) || q < MIN_QTD) q = MIN_QTD
+            inp.value = q
+            const cent = totalCentavos(q)
+            txtCotas.textContent = q + ' Números'
+            txtValor.textContent = brl(cent / 100)
+            txtValorOldEl.style.display = 'none'
+            localStorage.setItem('cotas', String(q))
+            localStorage.setItem('valor', String(cent))
+            sincronizarComboSelecionado(q)
+            if (inpMob) inpMob.value = q
+            if (txtCotasMob) txtCotasMob.textContent = q + ' Números'
+            if (txtValorMob) txtValorMob.textContent = brl(cent / 100)
+        }
+
+        async function carregarPreco() {
+            try {
+                const r = await fetch('cotas.json', { cache: 'no-store' })
+                const j = await r.json()
+                if (j && j.valor_cota_centavos) valorCotaCent = parseInt(j.valor_cota_centavos, 10)
+                if (j && j.min_qtd) MIN_QTD = parseInt(j.min_qtd, 10)
+                if (j && Array.isArray(j.raspadinha_regras)) {
+                    const cards = document.querySelectorAll('.raspaCard')
+                    j.raspadinha_regras.slice(0, cards.length).forEach((reg, idx) => {
+                        const card = cards[idx]
+                        if (!card) return
+                        if (reg.inc) card.dataset.inc = String(reg.inc)
+                        if (reg.raspadinhas) card.dataset.rasp = String(reg.raspadinhas)
+                        const badge = card.querySelector('.raspaBadge')
+                        if (badge && reg.raspadinhas) badge.textContent = 'Recebe ' + reg.raspadinhas + ' raspadinhas'
+                        const topB = card.querySelector('.raspaTxt .top b')
+                        if (topB && reg.a_partir) topB.textContent = reg.a_partir + ' números'
+                        const sub = card.querySelector('.raspaTxt .sub')
+                        if (sub && reg.raspadinhas) sub.textContent = reg.raspadinhas + ' chances de contemplação na Raspadinha'
+                        const btn = card.querySelector('.raspaBtn')
+                        if (btn && reg.inc) btn.textContent = '+' + reg.inc
+                    })
+                }
+            } catch (e) { }
+            const tagUnit = document.getElementById('tagUnit')
+            if (tagUnit) tagUnit.textContent = brl(valorCotaCent / 100)
+            atualizarCombos()
+            if (!inp.value || parseInt(inp.value, 10) < MIN_QTD) inp.value = MIN_QTD
+            atualizarResumo()
+        }
+
+        carregarPreco()
+
+        menos.addEventListener('click', () => {
+            const atual = parseInt(inp.value || MIN_QTD, 10)
+            inp.value = Math.max(MIN_QTD, atual - 1)
+            atualizarResumo()
+        })
+
+        mais.addEventListener('click', () => {
+            const atual = parseInt(inp.value || MIN_QTD, 10)
+            inp.value = atual + 1
+            atualizarResumo()
+        })
+
+        inp.addEventListener('input', () => {
+            const d = String(inp.value).replace(/\D/g, '')
+            if (d === '') { inp.value = '' } else { inp.value = parseInt(d, 10) }
+            atualizarResumo()
+        })
+
+        inp.addEventListener('blur', atualizarResumo)
+
+        if (menosMob) menosMob.addEventListener('click', () => {
+            const atual = parseInt(inp.value || MIN_QTD, 10)
+            inp.value = Math.max(MIN_QTD, atual - 1)
+            atualizarResumo()
+        })
+
+        if (maisMob) maisMob.addEventListener('click', () => {
+            const atual = parseInt(inp.value || MIN_QTD, 10)
+            inp.value = atual + 1
+            atualizarResumo()
+        })
+
+        if (inpMob) inpMob.addEventListener('input', () => {
+            const d = String(inpMob.value).replace(/\D/g, '')
+            if (d === '') {
+                inpMob.value = ''
+                inp.value = ''
+            } else {
+                inpMob.value = parseInt(d, 10)
+                inp.value = inpMob.value
+            }
+            atualizarResumo()
+        })
+
+        if (inpMob) inpMob.addEventListener('blur', atualizarResumo)
+
+        comboButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const qtd = parseInt(btn.getAttribute('data-combo-qtd'), 10)
+                inp.value = qtd
+                atualizarResumo()
+            })
+        })
+
+        function irParaPagamento() {
+            atualizarResumo()
+            const q = Math.max(MIN_QTD, parseInt(inp.value || MIN_QTD, 10))
+            const valorCentavos = totalCentavos(q)
+            const params = new URLSearchParams(window.location.search)
+            params.set('valor', String(valorCentavos))
+            location.href = 'pg2/?' + params.toString()
+        }
+
+        btnComprar.addEventListener('click', irParaPagamento)
+        if (btnComprarMob) btnComprarMob.addEventListener('click', irParaPagamento)
+
+        const accToggle = document.getElementById('accToggle')
+        const accBody = document.getElementById('accBody')
+        const chev = document.getElementById('chev')
+        const icoDown = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>'
+        const icoUp = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5"/></svg>'
+        let aberto = false
+
+        function setAcc(x) {
+            aberto = x
+            if (accBody) accBody.style.display = aberto ? 'block' : 'none'
+            if (chev) chev.innerHTML = aberto ? icoUp : icoDown
+        }
+
+        if (accToggle) {
+            setAcc(false)
+            accToggle.addEventListener('click', () => setAcc(!aberto))
+        }
+
+        const lista = document.getElementById('lista')
+        const contagem = document.getElementById('contagem')
+        const tabs = document.querySelectorAll('.tab')
+        const ctrlLista = document.getElementById('ctrlLista')
+        const txtCtrl = document.getElementById('txtCtrl')
+        const icoBtn = document.getElementById('icoBtn')
+        let pool = []
+        let filtroAtual = 'todas'
+        let qtdVisivelBase = 6
+        let qtdExtra = 0
+        const maxExtra = 20
+
+        function gerarNumero() {
+            const seis = Math.random() < 0.5
+            const min = seis ? 100000 : 1000000
+            const max = seis ? 999999 : 9999999
+            return String(Math.floor(Math.random() * (max - min + 1)) + min).padStart(6, '0')
+        }
+
+        function montarPool() {
+            pool = []
+            for (let i = 0; i < 36; i++) {
+                pool.push({ num: gerarNumero(), status: i % 12 === 0 ? 'comp' : 'disp', preco: 100000 })
+            }
+        }
+
+        function dadosFiltrados() {
+            if (filtroAtual === 'disp') return pool.filter(x => x.status === 'disp')
+            if (filtroAtual === 'comp') return pool.filter(x => x.status === 'comp')
+            return pool.slice()
+        }
+
+        function render() {
+            if (!lista || !contagem) return
+            const data = dadosFiltrados()
+            const tot = pool.length
+            const dis = pool.filter(x => x.status === 'disp').length
+            contagem.textContent = dis + ' disponíveis/' + tot + ' totais'
+            lista.innerHTML = ''
+            const limite = qtdVisivelBase + qtdExtra
+            data.slice(0, limite).forEach(it => {
+                const el = document.createElement('div')
+                el.className = 'item'
+                const precoHtml = '<div class="itTop"><span class="precoItem">' + brl(it.preco / 100) + '</span></div>'
+                const statusHtml = it.status === 'disp' ? '<span class="badgeOk">Disponível</span>' : '<span class="badgeOff2">Comprada</span>'
+                const corpo = '<div style="display:flex;justify-content:space-between;align-items:center"><div class="numRow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#6B7280" xmlns="http://www.w3.org/2000/svg"><path d="M3.75 6.667 14.167 2.5 15.833 6.667" stroke-width="1.667" stroke-linejoin="round"></path><path d="M1.667 6.667H18.333V9.167C17.083 9.167 15.833 10 15.833 11.458c0 1.458 1.25 2.708 2.5 2.708v2.5H1.667v-2.5c1.25 0 2.5-.833 2.5-2.5s-1.25-2.5-2.5-2.5v-2.5Z" stroke-width="1.667" stroke-linejoin="round"></path><path d="M7.083 10.577H9.583" stroke-width="1.667"></path><path d="M7.083 13.077h5.833" stroke-width="1.667"></path></svg><span>' + it.num + '</span></div>' + statusHtml + '</div>'
+                el.innerHTML = precoHtml + corpo
+                lista.appendChild(el)
+            })
+            if (txtCtrl && ctrlLista && icoBtn) {
+                if (qtdExtra >= maxExtra) {
+                    txtCtrl.textContent = 'Ver menos números'
+                    ctrlLista.dataset.state = 'menos'
+                    icoBtn.innerHTML = icoUp
+                } else {
+                    txtCtrl.textContent = 'Ver mais números'
+                    ctrlLista.dataset.state = 'mais'
+                    icoBtn.innerHTML = icoDown
+                }
+            }
+        }
+
+        if (ctrlLista) {
+            ctrlLista.addEventListener('click', () => {
+                if (ctrlLista.dataset.state === 'mais') {
+                    if (qtdExtra < maxExtra) qtdExtra += 10
+                    if (qtdExtra > maxExtra) qtdExtra = maxExtra
+                } else {
+                    qtdExtra = 0
+                }
+                render()
+            })
+        }
+
+        tabs.forEach(t => {
+            t.addEventListener('click', () => {
+                tabs.forEach(x => x.classList.remove('on'))
+                t.classList.add('on')
+                filtroAtual = t.dataset.filtro
+                qtdExtra = 0
+                render()
+            })
+        })
+
+        montarPool()
+        render()
+
+        function getRaspadinhas() { return parseInt(localStorage.getItem('raspadinhas') || '0', 10) }
+
+        function addRaspadinhas(n) {
+            const total = getRaspadinhas() + n
+            localStorage.setItem('raspadinhas', String(total))
+            return total
+        }
+
+        function showToast(msg) {
+            const el = document.getElementById('raspaToast')
+            if (!el) return
+            el.textContent = msg
+            el.classList.add('show')
+            clearTimeout(showToast._t)
+            showToast._t = setTimeout(() => el.classList.remove('show'), 1800)
+        }
+
+        document.querySelectorAll('.raspaCard').forEach(card => {
+            card.addEventListener('click', () => {
+                const inc = parseInt(card.dataset.inc, 10)
+                const rasp = parseInt(card.dataset.rasp, 10)
+                const base = Math.max(MIN_QTD, parseInt(inp.value || MIN_QTD, 10))
+                inp.value = base + inc
+                atualizarResumo()
+                const total = addRaspadinhas(rasp)
+                showToast('+' + rasp + ' raspadinhas adicionadas (total: ' + total + ')')
+            })
+        })
+    </script>
+
+
+
+</body></html>
